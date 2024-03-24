@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess App Assignment</title>
+    
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+       .container-box{
+            width: 80%;
+            margin: 64px auto;
+            padding: 64px;
+            border-radius: 40px;
+            background-color: #fffae1;
+            text-align: center;
+       } 
+
+       h1{
+            margin: 48px 0 ;
+            text-align: center;
+            color: green;
+       }
+
+       .btnGuess{
+            width: 180px;
+            padding: 16px 40px;
+            margin: 48px auto;
+            background-color: green;
+            color: white;
+            font-weight: 600;
+            border: 0;
+            border-radius: 12px;
+            display: block;
+       }
+
+       p{
+            font-size: 18px;
+            width: fit-content;
+            margin: 24px auto;
+       }
+
+    </style>
+</head>
+<body>
+
+    <h1>Guess APP</h1>
+
+    <div class="container-box">
+
+        <h2>Welcome to the Game of Luck</h2>
+
+        <p>Click the button below to start your guess.</p>
+        <p>You have 4 chances to guess right the Secret Number</p>
+        <p>Are you ready? let's begin...</p>
+
+        <button type="button" id="btnGuess" class="btnGuess">Click to Guess </button>
+
+
+        <p id="displayResult" class="displayResult"></p>  
+
+    </div>
+
+    <script src="./guessApp.js"></script>
+</body>
+</html>
