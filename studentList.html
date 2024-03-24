@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List Assignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container-box{
+            width: 400px;
+            background-color: beige;
+            height: fit-content;
+            padding: 48px;
+            margin: 64px auto;
+        }
+
+        .btnFlex{
+            margin: 48px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn{
+            padding: 12px 16px;
+            width: 120px;
+            border: 0;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;         
+        }
+
+        .btnAdd{
+            background-color: rgb(36, 154, 36);
+        }
+
+        .btnDelete{
+            background-color: rgb(226, 45, 45);
+        }
+
+        .listbox{
+            margin: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-box">
+
+        <h1>List of Students</h1>
+
+        <ol id="listOfStudents"></ol>
+
+        <div class="btnFlex">
+            <button type="button" id="addBtn" class="btn btnAdd">ADD</button>
+            <button type="button" id="deleteBtn" class="btn btnDelete">DELETE</button>
+        </div>
+
+        <div class="listBox">
+            <h2 id="headingAddedStudent"></h2>
+            <ol id="listOfAddedStudents"></ol>
+        </div>
+        
+        <div class="listBox">
+            <h2 id="headingDeletedStudent"></h2>
+            <ol id="listOfDeletedStudents"></ol>
+        </div>
+       
+    </div>
+
+    
+    <script src="./studentList.js"></script>
+
+</body>
+</html>
